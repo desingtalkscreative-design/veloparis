@@ -7,7 +7,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="/_sdk/element_sdk.js"></script>
     <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Outfit:wght@300;400;500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&amp;family=Outfit:wght@300;400;500;600&amp;display=swap"
       rel="stylesheet"
     />
     <style>
@@ -85,6 +85,12 @@
         }
       }
     </style>
+    <style>
+      @view-transition {
+        navigation: auto;
+      }
+    </style>
+    <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
   </head>
   <body class="h-full font-outfit">
     <div
@@ -109,7 +115,7 @@
               class="w-10 h-10 rounded-full flex items-center justify-center"
               style="background: #1a1a2e"
             >
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <svg width="24" height="24" viewbox="0 0 24 24" fill="none">
                 <circle
                   cx="6"
                   cy="17"
@@ -176,12 +182,11 @@
           </button>
         </div>
       </nav>
-
       <!-- Hero Section -->
       <section class="relative min-h-screen flex items-center pt-20">
         <!-- Decorative Elements -->
         <div class="absolute top-32 right-10 w-64 h-64 opacity-10 spin-slow">
-          <svg viewBox="0 0 100 100" fill="none">
+          <svg viewbox="0 0 100 100" fill="none">
             <circle
               cx="50"
               cy="50"
@@ -205,7 +210,6 @@
             />
           </svg>
         </div>
-
         <div
           class="max-w-6xl mx-auto px-6 py-20 grid lg:grid-cols-2 gap-12 items-center"
         >
@@ -220,26 +224,1300 @@
               ></span>
               Disponible en toda París
             </div>
-
             <h1
               id="hero-title"
               class="font-playfair text-5xl md:text-6xl lg:text-7xl font-bold leading-tight"
               style="color: #1a1a2e"
             >
-              Descubre París<br />
-              <span class="gradient-text">en bicicleta</span>
+              Descubre París<br /><span class="gradient-text"
+                >en bicicleta</span
+              >
             </h1>
-
             <p
               id="hero-subtitle"
               class="text-lg md:text-xl max-w-lg"
               style="color: #4a4a5a"
             >
-              La forma más elegante y so
+              La forma más elegante y sostenible de explorar la Ciudad de la
+              Luz. Reserva una bici en segundos y vive París como un local.
             </p>
+            <div class="flex flex-col sm:flex-row gap-4">
+              <button
+                id="cta-btn"
+                class="px-8 py-4 rounded-full text-lg font-semibold transition-all hover:scale-105 pulse-glow"
+                style="background: #d4af37; color: #1a1a2e"
+              >
+                🚲 Reservar Ahora
+              </button>
+              <button
+                class="px-8 py-4 rounded-full text-lg font-medium border-2 transition-all hover:scale-105"
+                style="border-color: #1a1a2e; color: #1a1a2e"
+              >
+                Ver Demo
+              </button>
+            </div>
+            <!-- Stats -->
+            <div class="flex gap-8 pt-8">
+              <div>
+                <div
+                  class="font-playfair text-3xl font-bold"
+                  style="color: #d4af37"
+                >
+                  50K+
+                </div>
+                <div class="text-sm" style="color: #4a4a5a">
+                  Usuarios activos
+                </div>
+              </div>
+              <div>
+                <div
+                  class="font-playfair text-3xl font-bold"
+                  style="color: #d4af37"
+                >
+                  2.5K
+                </div>
+                <div class="text-sm" style="color: #4a4a5a">Bicicletas</div>
+              </div>
+              <div>
+                <div
+                  class="font-playfair text-3xl font-bold"
+                  style="color: #d4af37"
+                >
+                  4.9★
+                </div>
+                <div class="text-sm" style="color: #4a4a5a">App Store</div>
+              </div>
+            </div>
+          </div>
+          <!-- Phone Mockup -->
+          <div class="relative flex justify-center">
+            <div class="float-animation">
+              <div
+                class="relative w-72 h-[580px] rounded-[3rem] p-3 shadow-2xl"
+                style="background: #1a1a2e"
+              >
+                <div
+                  class="w-full h-full rounded-[2.5rem] overflow-hidden"
+                  style="
+                    background: linear-gradient(180deg, #f8f6f0 0%, #fff 100%);
+                  "
+                >
+                  <!-- App Screen Content -->
+                  <div class="p-6 space-y-4">
+                    <!-- App Header -->
+                    <div class="flex items-center justify-between">
+                      <div class="flex items-center gap-2">
+                        <div
+                          class="w-8 h-8 rounded-full flex items-center justify-center"
+                          style="background: #d4af37"
+                        >
+                          <span class="text-xs">🚲</span>
+                        </div>
+                        <span
+                          class="font-semibold text-sm"
+                          style="color: #1a1a2e"
+                          >VéloParis</span
+                        >
+                      </div>
+                      <div
+                        class="w-8 h-8 rounded-full"
+                        style="background: #e8e8e8"
+                      ></div>
+                    </div>
+                    <!-- Map Area -->
+                    <div
+                      class="relative h-48 rounded-2xl overflow-hidden"
+                      style="background: #e8e4d9"
+                    >
+                      <svg class="w-full h-full" viewbox="0 0 200 150">
+                        <!-- Simplified Paris Map -->
+                        <path
+                          d="M20,75 Q50,30 100,50 T180,75"
+                          stroke="#d4af37"
+                          stroke-width="2"
+                          fill="none"
+                          class="bike-path"
+                        />
+                        <circle cx="100" cy="50" r="4" fill="#d4af37" />
+                        <circle cx="40" cy="70" r="3" fill="#1a1a2e" />
+                        <circle cx="160" cy="80" r="3" fill="#1a1a2e" />
+                        <circle cx="80" cy="90" r="3" fill="#1a1a2e" />
+                        <!-- Eiffel Tower Icon -->
+                        <path d="M100,30 L95,50 L105,50 Z" fill="#1a1a2e" />
+                        <rect
+                          x="97"
+                          y="20"
+                          width="6"
+                          height="12"
+                          fill="#1a1a2e"
+                        />
+                      </svg>
+                      <div
+                        class="absolute bottom-3 left-3 px-3 py-1 rounded-full text-xs font-medium"
+                        style="background: white; color: #1a1a2e"
+                      >
+                        📍 15 bicis cerca
+                      </div>
+                    </div>
+                    <!-- Bike Card -->
+                    <div
+                      class="p-4 rounded-2xl"
+                      style="
+                        background: white;
+                        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+                      "
+                    >
+                      <div class="flex items-center gap-3">
+                        <div
+                          class="w-12 h-12 rounded-xl flex items-center justify-center"
+                          style="background: rgba(212, 175, 55, 0.15)"
+                        >
+                          <span class="text-2xl">🚲</span>
+                        </div>
+                        <div class="flex-1">
+                          <div
+                            class="font-semibold text-sm"
+                            style="color: #1a1a2e"
+                          >
+                            Vélo Classic
+                          </div>
+                          <div class="text-xs" style="color: #4a4a5a">
+                            A 2 min • Batería 100%
+                          </div>
+                        </div>
+                        <div class="text-right">
+                          <div class="font-bold" style="color: #d4af37">
+                            €1.50
+                          </div>
+                          <div class="text-xs" style="color: #4a4a5a">
+                            /30 min
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Quick Actions -->
+                    <div class="grid grid-cols-3 gap-2">
+                      <div
+                        class="p-3 rounded-xl text-center"
+                        style="background: rgba(26, 26, 46, 0.05)"
+                      >
+                        <div class="text-lg mb-1">🗼</div>
+                        <div class="text-xs font-medium" style="color: #1a1a2e">
+                          Rutas
+                        </div>
+                      </div>
+                      <div
+                        class="p-3 rounded-xl text-center"
+                        style="background: rgba(26, 26, 46, 0.05)"
+                      >
+                        <div class="text-lg mb-1">⭐</div>
+                        <div class="text-xs font-medium" style="color: #1a1a2e">
+                          Favoritos
+                        </div>
+                      </div>
+                      <div
+                        class="p-3 rounded-xl text-center"
+                        style="background: rgba(26, 26, 46, 0.05)"
+                      >
+                        <div class="text-lg mb-1">🎫</div>
+                        <div class="text-xs font-medium" style="color: #1a1a2e">
+                          Pases
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Reserve Button -->
+                    <button
+                      class="w-full py-3 rounded-xl font-semibold text-sm"
+                      style="background: #d4af37; color: #1a1a2e"
+                    >
+                      Reservar esta bici →
+                    </button>
+                  </div>
+                </div>
+                <!-- Notch -->
+                <div
+                  class="absolute top-6 left-1/2 -translate-x-1/2 w-24 h-6 rounded-full"
+                  style="background: #1a1a2e"
+                ></div>
+              </div>
+            </div>
+            <!-- Floating Elements -->
+            <div
+              class="absolute -left-8 top-20 p-4 rounded-2xl glass-card shadow-lg"
+              style="animation: float 4s ease-in-out infinite"
+            >
+              <div class="flex items-center gap-3">
+                <div
+                  class="w-10 h-10 rounded-full flex items-center justify-center"
+                  style="background: #d4af37"
+                >
+                  <span>🗼</span>
+                </div>
+                <div>
+                  <div class="font-semibold text-sm" style="color: #1a1a2e">
+                    Tour Eiffel
+                  </div>
+                  <div class="text-xs" style="color: #4a4a5a">Ruta popular</div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="absolute -right-4 bottom-32 p-4 rounded-2xl glass-card shadow-lg"
+              style="animation: float 3.5s ease-in-out infinite 0.5s"
+            >
+              <div class="flex items-center gap-2">
+                <span class="text-2xl">⭐</span>
+                <div>
+                  <div class="font-bold" style="color: #1a1a2e">4.9/5</div>
+                  <div class="text-xs" style="color: #4a4a5a">12K+ reviews</div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
+      <!-- How it Works -->
+      <section id="how" class="py-24" style="background: #1a1a2e">
+        <div class="max-w-6xl mx-auto px-6">
+          <div class="text-center mb-16">
+            <h2
+              class="font-playfair text-4xl md:text-5xl font-bold mb-4"
+              style="color: #fefefe"
+            >
+              Cómo funciona
+            </h2>
+            <p
+              class="text-lg max-w-2xl mx-auto"
+              style="color: rgba(255, 255, 255, 0.7)"
+            >
+              En solo 3 pasos estarás pedaleando por los Campos Elíseos
+            </p>
+          </div>
+          <div class="grid md:grid-cols-3 gap-8">
+            <!-- Step 1 -->
+            <div
+              class="text-center p-8 rounded-3xl transition-transform hover:scale-105"
+              style="
+                background: rgba(255, 255, 255, 0.05);
+                border: 1px solid rgba(212, 175, 55, 0.2);
+              "
+            >
+              <div
+                class="w-16 h-16 mx-auto mb-6 rounded-2xl flex items-center justify-center"
+                style="background: #d4af37"
+              >
+                <span class="text-3xl">📱</span>
+              </div>
+              <div
+                class="font-playfair text-6xl font-bold mb-4"
+                style="color: rgba(212, 175, 55, 0.3)"
+              >
+                01
+              </div>
+              <h3
+                id="feature-1"
+                class="font-semibold text-xl mb-3"
+                style="color: #fefefe"
+              >
+                Descarga la App
+              </h3>
+              <p style="color: rgba(255, 255, 255, 0.6)">
+                Disponible en iOS y Android. Regístrate en menos de 1 minuto.
+              </p>
+            </div>
+            <!-- Step 2 -->
+            <div
+              class="text-center p-8 rounded-3xl transition-transform hover:scale-105"
+              style="
+                background: rgba(255, 255, 255, 0.05);
+                border: 1px solid rgba(212, 175, 55, 0.2);
+              "
+            >
+              <div
+                class="w-16 h-16 mx-auto mb-6 rounded-2xl flex items-center justify-center"
+                style="background: #d4af37"
+              >
+                <span class="text-3xl">🔓</span>
+              </div>
+              <div
+                class="font-playfair text-6xl font-bold mb-4"
+                style="color: rgba(212, 175, 55, 0.3)"
+              >
+                02
+              </div>
+              <h3
+                id="feature-2"
+                class="font-semibold text-xl mb-3"
+                style="color: #fefefe"
+              >
+                Desbloquea tu Bici
+              </h3>
+              <p style="color: rgba(255, 255, 255, 0.6)">
+                Escanea el código QR y la bicicleta se desbloquea
+                automáticamente.
+              </p>
+            </div>
+            <!-- Step 3 -->
+            <div
+              class="text-center p-8 rounded-3xl transition-transform hover:scale-105"
+              style="
+                background: rgba(255, 255, 255, 0.05);
+                border: 1px solid rgba(212, 175, 55, 0.2);
+              "
+            >
+              <div
+                class="w-16 h-16 mx-auto mb-6 rounded-2xl flex items-center justify-center"
+                style="background: #d4af37"
+              >
+                <span class="text-3xl">🚴</span>
+              </div>
+              <div
+                class="font-playfair text-6xl font-bold mb-4"
+                style="color: rgba(212, 175, 55, 0.3)"
+              >
+                03
+              </div>
+              <h3
+                id="feature-3"
+                class="font-semibold text-xl mb-3"
+                style="color: #fefefe"
+              >
+                ¡A Pedalear!
+              </h3>
+              <p style="color: rgba(255, 255, 255, 0.6)">
+                Explora París a tu ritmo. Devuelve la bici en cualquier
+                estación.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Routes Section -->
+      <section id="routes" class="py-24">
+        <div class="max-w-6xl mx-auto px-6">
+          <div class="text-center mb-16">
+            <h2
+              class="font-playfair text-4xl md:text-5xl font-bold mb-4"
+              style="color: #1a1a2e"
+            >
+              Rutas Populares
+            </h2>
+            <p class="text-lg max-w-2xl mx-auto" style="color: #4a4a5a">
+              Descubre los mejores itinerarios creados por locales y turistas
+            </p>
+          </div>
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Route Card 1 -->
+            <div
+              class="group rounded-3xl overflow-hidden transition-all hover:shadow-2xl cursor-pointer"
+              style="background: white"
+            >
+              <div
+                class="h-48 relative overflow-hidden"
+                style="background: #f5f0e8"
+              >
+                <!-- Mapa SVG Ficticio 1 -->
+                <svg
+                  class="w-full h-full"
+                  viewbox="0 0 300 200"
+                  preserveaspectratio="xMidYMid slice"
+                >
+                  <!-- Fondo de calles -->
+                  <rect width="300" height="200" fill="#f5f0e8" />
+                  <!-- Río Sena -->
+                  <path
+                    d="M0,100 Q75,90 150,95 T300,100 L300,120 Q225,115 150,110 T0,120 Z"
+                    fill="#b8d4e8"
+                    opacity="0.6"
+                  />
+                  <!-- Calles principales -->
+                  <line
+                    x1="150"
+                    y1="0"
+                    x2="150"
+                    y2="200"
+                    stroke="#d4af37"
+                    stroke-width="2"
+                    stroke-dasharray="5,5"
+                    opacity="0.4"
+                  />
+                  <line
+                    x1="0"
+                    y1="100"
+                    x2="300"
+                    y2="100"
+                    stroke="#d4af37"
+                    stroke-width="2"
+                    stroke-dasharray="5,5"
+                    opacity="0.4"
+                  />
+                  <!-- Ruta marcada -->
+                  <path
+                    d="M50,150 L80,120 L120,80 L180,60 L240,50"
+                    stroke="#d4af37"
+                    stroke-width="4"
+                    fill="none"
+                    stroke-linecap="round"
+                    class="bike-path"
+                  />
+                  <!-- Puntos de interés -->
+                  <circle cx="50" cy="150" r="8" fill="#1a1a2e" />
+                  <circle cx="120" cy="80" r="8" fill="#d4af37" />
+                  <circle cx="240" cy="50" r="8" fill="#1a1a2e" />
+                  <!-- Torre Eiffel estilizada -->
+                  <g transform="translate(120, 70)">
+                    <path d="M0,15 L-5,0 L5,0 Z" fill="#1a1a2e" />
+                    <rect x="-1" y="-5" width="2" height="8" fill="#1a1a2e" />
+                  </g>
+                  <!-- Marcadores de bicis -->
+                  <circle
+                    cx="80"
+                    cy="120"
+                    r="4"
+                    fill="white"
+                    stroke="#d4af37"
+                    stroke-width="2"
+                  />
+                  <circle
+                    cx="180"
+                    cy="60"
+                    r="4"
+                    fill="white"
+                    stroke="#d4af37"
+                    stroke-width="2"
+                  />
+                </svg>
+                <div
+                  class="absolute top-4 right-4 px-3 py-1 rounded-full text-xs font-semibold"
+                  style="background: #d4af37; color: #1a1a2e"
+                >
+                  ⭐ Popular
+                </div>
+              </div>
+              <div class="p-6">
+                <h3
+                  class="font-playfair text-xl font-bold mb-2"
+                  style="color: #1a1a2e"
+                >
+                  La Parisienne Classique
+                </h3>
+                <p class="text-sm mb-4" style="color: #4a4a5a">
+                  Torre Eiffel → Champs-Élysées → Louvre
+                </p>
+                <div class="flex items-center justify-between">
+                  <div
+                    class="flex items-center gap-4 text-sm"
+                    style="color: #4a4a5a"
+                  >
+                    <span>🕐 2h</span> <span>📍 12km</span>
+                  </div>
+                  <div class="font-bold" style="color: #d4af37">Gratis</div>
+                </div>
+              </div>
+            </div>
+            <!-- Route Card 2 -->
+            <div
+              class="group rounded-3xl overflow-hidden transition-all hover:shadow-2xl cursor-pointer"
+              style="background: white"
+            >
+              <div
+                class="h-48 relative overflow-hidden"
+                style="background: #e8f0f5"
+              >
+                <!-- Mapa SVG Ficticio 2 -->
+                <svg
+                  class="w-full h-full"
+                  viewbox="0 0 300 200"
+                  preserveaspectratio="xMidYMid slice"
+                >
+                  <!-- Fondo -->
+                  <rect width="300" height="200" fill="#e8f0f5" />
+                  <!-- Colina de Montmartre -->
+                  <ellipse
+                    cx="150"
+                    cy="180"
+                    rx="120"
+                    ry="60"
+                    fill="#d4e0e8"
+                    opacity="0.5"
+                  />
+                  <ellipse
+                    cx="150"
+                    cy="170"
+                    rx="90"
+                    ry="45"
+                    fill="#c8d8e3"
+                    opacity="0.5"
+                  />
+                  <!-- Calles serpenteantes -->
+                  <path
+                    d="M20,180 Q60,160 80,140 T120,100 T160,80 T200,70"
+                    stroke="#d4af37"
+                    stroke-width="2"
+                    stroke-dasharray="4,4"
+                    opacity="0.3"
+                  />
+                  <path
+                    d="M280,170 Q240,150 220,130 T180,100 T140,90"
+                    stroke="#d4af37"
+                    stroke-width="2"
+                    stroke-dasharray="4,4"
+                    opacity="0.3"
+                  />
+                  <!-- Ruta principal -->
+                  <path
+                    d="M60,170 Q90,150 120,120 Q150,90 180,80 Q210,70 240,65"
+                    stroke="#d4af37"
+                    stroke-width="4"
+                    fill="none"
+                    stroke-linecap="round"
+                    class="bike-path"
+                  />
+                  <!-- Sacré-Cœur (cúpulas) -->
+                  <g transform="translate(180, 70)">
+                    <circle cx="0" cy="0" r="12" fill="#1a1a2e" opacity="0.8" />
+                    <circle cx="-8" cy="3" r="8" fill="#1a1a2e" opacity="0.6" />
+                    <circle cx="8" cy="3" r="8" fill="#1a1a2e" opacity="0.6" />
+                  </g>
+                  <!-- Puntos de inicio/fin -->
+                  <circle cx="60" cy="170" r="8" fill="#1a1a2e" />
+                  <circle cx="240" cy="65" r="8" fill="#1a1a2e" />
+                  <!-- Estaciones de bici -->
+                  <circle
+                    cx="120"
+                    cy="120"
+                    r="4"
+                    fill="white"
+                    stroke="#d4af37"
+                    stroke-width="2"
+                  />
+                  <circle
+                    cx="180"
+                    cy="80"
+                    r="4"
+                    fill="white"
+                    stroke="#d4af37"
+                    stroke-width="2"
+                  />
+                  <circle
+                    cx="210"
+                    cy="70"
+                    r="4"
+                    fill="white"
+                    stroke="#d4af37"
+                    stroke-width="2"
+                  />
+                </svg>
+              </div>
+              <div class="p-6">
+                <h3
+                  class="font-playfair text-xl font-bold mb-2"
+                  style="color: #1a1a2e"
+                >
+                  Montmartre Artistique
+                </h3>
+                <p class="text-sm mb-4" style="color: #4a4a5a">
+                  Sacré-Cœur → Place du Tertre → Moulin Rouge
+                </p>
+                <div class="flex items-center justify-between">
+                  <div
+                    class="flex items-center gap-4 text-sm"
+                    style="color: #4a4a5a"
+                  >
+                    <span>🕐 1.5h</span> <span>📍 8km</span>
+                  </div>
+                  <div class="font-bold" style="color: #d4af37">Gratis</div>
+                </div>
+              </div>
+            </div>
+            <!-- Route Card 3 -->
+            <div
+              class="group rounded-3xl overflow-hidden transition-all hover:shadow-2xl cursor-pointer"
+              style="background: white"
+            >
+              <div
+                class="h-48 relative overflow-hidden"
+                style="background: #f5f0f8"
+              >
+                <!-- Mapa SVG Ficticio 3 -->
+                <svg
+                  class="w-full h-full"
+                  viewbox="0 0 300 200"
+                  preserveaspectratio="xMidYMid slice"
+                >
+                  <!-- Fondo -->
+                  <rect width="300" height="200" fill="#f5f0f8" />
+                  <!-- Río Sena más prominente -->
+                  <path
+                    d="M0,80 Q50,70 100,75 Q150,80 200,75 Q250,70 300,75 L300,110 Q250,105 200,110 Q150,115 100,110 Q50,105 0,110 Z"
+                    fill="#c8d8e8"
+                    opacity="0.5"
+                  />
+                  <!-- Île de la Cité (Notre-Dame) -->
+                  <ellipse
+                    cx="150"
+                    cy="95"
+                    rx="35"
+                    ry="15"
+                    fill="#d8c8d8"
+                    opacity="0.6"
+                  />
+                  <!-- Puentes -->
+                  <rect
+                    x="120"
+                    y="88"
+                    width="4"
+                    height="14"
+                    fill="#a0a0a0"
+                    opacity="0.4"
+                  />
+                  <rect
+                    x="170"
+                    y="88"
+                    width="4"
+                    height="14"
+                    fill="#a0a0a0"
+                    opacity="0.4"
+                  />
+                  <rect
+                    x="210"
+                    y="88"
+                    width="4"
+                    height="14"
+                    fill="#a0a0a0"
+                    opacity="0.4"
+                  />
+                  <!-- Calles paralelas al río -->
+                  <line
+                    x1="0"
+                    y1="60"
+                    x2="300"
+                    y2="60"
+                    stroke="#d4af37"
+                    stroke-width="1.5"
+                    stroke-dasharray="3,3"
+                    opacity="0.3"
+                  />
+                  <line
+                    x1="0"
+                    y1="130"
+                    x2="300"
+                    y2="130"
+                    stroke="#d4af37"
+                    stroke-width="1.5"
+                    stroke-dasharray="3,3"
+                    opacity="0.3"
+                  />
+                  <!-- Ruta romántica serpenteante -->
+                  <path
+                    d="M40,60 L80,70 Q120,75 150,85 L180,95 Q220,105 250,120 L280,140"
+                    stroke="#d4af37"
+                    stroke-width="4"
+                    fill="none"
+                    stroke-linecap="round"
+                    class="bike-path"
+                  />
+                  <!-- Notre-Dame simplificada -->
+                  <g transform="translate(150, 90)">
+                    <rect
+                      x="-8"
+                      y="-5"
+                      width="16"
+                      height="12"
+                      fill="#1a1a2e"
+                      opacity="0.7"
+                    />
+                    <polygon
+                      points="0,-8 -6,-5 6,-5"
+                      fill="#1a1a2e"
+                      opacity="0.7"
+                    />
+                  </g>
+                  <!-- Jardines (círculos verdes) -->
+                  <circle
+                    cx="270"
+                    cy="150"
+                    r="18"
+                    fill="#c8e0c8"
+                    opacity="0.4"
+                  />
+                  <circle
+                    cx="260"
+                    cy="155"
+                    r="12"
+                    fill="#b8d8b8"
+                    opacity="0.4"
+                  />
+                  <!-- Puntos de interés -->
+                  <circle cx="40" cy="60" r="8" fill="#1a1a2e" />
+                  <circle cx="150" cy="85" r="8" fill="#d4af37" />
+                  <circle cx="280" cy="140" r="8" fill="#1a1a2e" />
+                  <!-- Estaciones intermedias -->
+                  <circle
+                    cx="80"
+                    cy="70"
+                    r="4"
+                    fill="white"
+                    stroke="#d4af37"
+                    stroke-width="2"
+                  />
+                  <circle
+                    cx="180"
+                    cy="95"
+                    r="4"
+                    fill="white"
+                    stroke="#d4af37"
+                    stroke-width="2"
+                  />
+                  <circle
+                    cx="250"
+                    cy="120"
+                    r="4"
+                    fill="white"
+                    stroke="#d4af37"
+                    stroke-width="2"
+                  />
+                </svg>
+              </div>
+              <div class="p-6">
+                <h3
+                  class="font-playfair text-xl font-bold mb-2"
+                  style="color: #1a1a2e"
+                >
+                  Romance sur Seine
+                </h3>
+                <p class="text-sm mb-4" style="color: #4a4a5a">
+                  Notre-Dame → Pont des Arts → Jardins du Luxembourg
+                </p>
+                <div class="flex items-center justify-between">
+                  <div
+                    class="flex items-center gap-4 text-sm"
+                    style="color: #4a4a5a"
+                  >
+                    <span>🕐 2.5h</span> <span>📍 15km</span>
+                  </div>
+                  <div class="font-bold" style="color: #d4af37">Gratis</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Pricing Section -->
+      <section
+        id="pricing"
+        class="py-24"
+        style="background: linear-gradient(180deg, #f8f6f0 0%, #f0ece3 100%)"
+      >
+        <div class="max-w-6xl mx-auto px-6">
+          <div class="text-center mb-16">
+            <h2
+              class="font-playfair text-4xl md:text-5xl font-bold mb-4"
+              style="color: #1a1a2e"
+            >
+              Precios Simples
+            </h2>
+            <p class="text-lg max-w-2xl mx-auto" style="color: #4a4a5a">
+              Sin sorpresas. Paga solo por lo que uses.
+            </p>
+          </div>
+          <div class="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+            <!-- Pay as you go -->
+            <div
+              class="p-8 rounded-3xl transition-transform hover:scale-105"
+              style="background: white"
+            >
+              <div class="text-center">
+                <div class="text-4xl mb-4">⏱️</div>
+                <h3
+                  class="font-playfair text-2xl font-bold mb-2"
+                  style="color: #1a1a2e"
+                >
+                  Por Minuto
+                </h3>
+                <div class="mb-6">
+                  <span
+                    class="font-playfair text-4xl font-bold"
+                    style="color: #d4af37"
+                    >€0.05</span
+                  >
+                  <span style="color: #4a4a5a">/min</span>
+                </div>
+                <ul class="text-left space-y-3 mb-8">
+                  <li class="flex items-center gap-2" style="color: #4a4a5a">
+                    <span style="color: #d4af37">✓</span> Desbloqueo €1
+                  </li>
+                  <li class="flex items-center gap-2" style="color: #4a4a5a">
+                    <span style="color: #d4af37">✓</span> Sin compromiso
+                  </li>
+                  <li class="flex items-center gap-2" style="color: #4a4a5a">
+                    <span style="color: #d4af37">✓</span> Ideal para paseos
+                    cortos
+                  </li>
+                </ul>
+                <button
+                  class="w-full py-3 rounded-xl font-semibold border-2 transition-all hover:scale-105"
+                  style="border-color: #1a1a2e; color: #1a1a2e"
+                >
+                  Empezar
+                </button>
+              </div>
+            </div>
+            <!-- Day Pass -->
+            <div
+              class="p-8 rounded-3xl relative transition-transform hover:scale-105"
+              style="background: #1a1a2e; transform: scale(1.05)"
+            >
+              <div
+                class="absolute -top-4 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full text-xs font-bold"
+                style="background: #d4af37; color: #1a1a2e"
+              >
+                MÁS POPULAR
+              </div>
+              <div class="text-center">
+                <div class="text-4xl mb-4">☀️</div>
+                <h3
+                  class="font-playfair text-2xl font-bold mb-2"
+                  style="color: #fefefe"
+                >
+                  Pase Día
+                </h3>
+                <div class="mb-6">
+                  <span
+                    class="font-playfair text-4xl font-bold"
+                    style="color: #d4af37"
+                    >€15</span
+                  >
+                  <span style="color: rgba(255, 255, 255, 0.6)">/24h</span>
+                </div>
+                <ul class="text-left space-y-3 mb-8">
+                  <li
+                    class="flex items-center gap-2"
+                    style="color: rgba(255, 255, 255, 0.8)"
+                  >
+                    <span style="color: #d4af37">✓</span> Viajes ilimitados
+                  </li>
+                  <li
+                    class="flex items-center gap-2"
+                    style="color: rgba(255, 255, 255, 0.8)"
+                  >
+                    <span style="color: #d4af37">✓</span> 45 min por viaje
+                  </li>
+                  <li
+                    class="flex items-center gap-2"
+                    style="color: rgba(255, 255, 255, 0.8)"
+                  >
+                    <span style="color: #d4af37">✓</span> Rutas audio-guiadas
+                  </li>
+                </ul>
+                <button
+                  class="w-full py-3 rounded-xl font-semibold transition-all hover:scale-105"
+                  style="background: #d4af37; color: #1a1a2e"
+                >
+                  Comprar Pase
+                </button>
+              </div>
+            </div>
+            <!-- Week Pass -->
+            <div
+              class="p-8 rounded-3xl transition-transform hover:scale-105"
+              style="background: white"
+            >
+              <div class="text-center">
+                <div class="text-4xl mb-4">🌟</div>
+                <h3
+                  class="font-playfair text-2xl font-bold mb-2"
+                  style="color: #1a1a2e"
+                >
+                  Pase Semana
+                </h3>
+                <div class="mb-6">
+                  <span
+                    class="font-playfair text-4xl font-bold"
+                    style="color: #d4af37"
+                    >€35</span
+                  >
+                  <span style="color: #4a4a5a">/7 días</span>
+                </div>
+                <ul class="text-left space-y-3 mb-8">
+                  <li class="flex items-center gap-2" style="color: #4a4a5a">
+                    <span style="color: #d4af37">✓</span> Todo del Pase Día
+                  </li>
+                  <li class="flex items-center gap-2" style="color: #4a4a5a">
+                    <span style="color: #d4af37">✓</span> 60 min por viaje
+                  </li>
+                  <li class="flex items-center gap-2" style="color: #4a4a5a">
+                    <span style="color: #d4af37">✓</span> Soporte prioritario
+                  </li>
+                </ul>
+                <button
+                  class="w-full py-3 rounded-xl font-semibold border-2 transition-all hover:scale-105"
+                  style="border-color: #1a1a2e; color: #1a1a2e"
+                >
+                  Comprar Pase
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Download CTA -->
+      <section class="py-24" style="background: #1a1a2e">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+          <h2
+            class="font-playfair text-4xl md:text-5xl font-bold mb-6"
+            style="color: #fefefe"
+          >
+            Tu aventura parisina<br /><span style="color: #d4af37"
+              >comienza aquí</span
+            >
+          </h2>
+          <p
+            class="text-lg mb-10 max-w-2xl mx-auto"
+            style="color: rgba(255, 255, 255, 0.7)"
+          >
+            Únete a miles de turistas que ya descubrieron la mejor forma de
+            explorar París
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <!-- App Store Button -->
+            <button
+              class="flex items-center justify-center gap-3 px-8 py-4 rounded-xl transition-all hover:scale-105"
+              style="background: white"
+            >
+              <svg width="28" height="28" viewbox="0 0 24 24" fill="#1a1a2e">
+                <path
+                  d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"
+                />
+              </svg>
+              <div class="text-left">
+                <div class="text-xs" style="color: #4a4a5a">Descargar en</div>
+                <div class="font-semibold" style="color: #1a1a2e">
+                  App Store
+                </div>
+              </div>
+            </button>
+            <!-- Google Play Button -->
+            <button
+              class="flex items-center justify-center gap-3 px-8 py-4 rounded-xl transition-all hover:scale-105"
+              style="background: white"
+            >
+              <svg width="28" height="28" viewbox="0 0 24 24" fill="#1a1a2e">
+                <path
+                  d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.5,12.92 20.16,13.19L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"
+                />
+              </svg>
+              <div class="text-left">
+                <div class="text-xs" style="color: #4a4a5a">Disponible en</div>
+                <div class="font-semibold" style="color: #1a1a2e">
+                  Google Play
+                </div>
+              </div>
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- Footer -->
+      <footer class="py-12" style="background: #0f0f1a">
+        <div class="max-w-6xl mx-auto px-6">
+          <div
+            class="flex flex-col md:flex-row items-center justify-between gap-6"
+          >
+            <div class="flex items-center gap-3">
+              <div
+                class="w-10 h-10 rounded-full flex items-center justify-center"
+                style="background: #d4af37"
+              >
+                <svg width="24" height="24" viewbox="0 0 24 24" fill="none">
+                  <circle
+                    cx="6"
+                    cy="17"
+                    r="3"
+                    stroke="#1a1a2e"
+                    stroke-width="2"
+                  />
+                  <circle
+                    cx="18"
+                    cy="17"
+                    r="3"
+                    stroke="#1a1a2e"
+                    stroke-width="2"
+                  />
+                  <path
+                    d="M6 17L9 9H15L18 17"
+                    stroke="#1a1a2e"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M12 9V5"
+                    stroke="#1a1a2e"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M10 5H14"
+                    stroke="#1a1a2e"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </div>
+              <span
+                class="font-playfair text-xl font-bold"
+                style="color: #fefefe"
+                >VéloParis</span
+              >
+            </div>
+            <div class="flex items-center gap-6">
+              <a
+                href="#"
+                class="text-sm hover:opacity-70 transition-opacity"
+                style="color: rgba(255, 255, 255, 0.6)"
+                >Términos</a
+              >
+              <a
+                href="#"
+                class="text-sm hover:opacity-70 transition-opacity"
+                style="color: rgba(255, 255, 255, 0.6)"
+                >Privacidad</a
+              >
+              <a
+                href="#"
+                class="text-sm hover:opacity-70 transition-opacity"
+                style="color: rgba(255, 255, 255, 0.6)"
+                >Contacto</a
+              >
+            </div>
+            <div class="flex items-center gap-4">
+              <a
+                href="#"
+                class="w-10 h-10 rounded-full flex items-center justify-center transition-all hover:scale-110"
+                style="background: rgba(255, 255, 255, 0.1)"
+              >
+                <span>📸</span>
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 rounded-full flex items-center justify-center transition-all hover:scale-110"
+                style="background: rgba(255, 255, 255, 0.1)"
+              >
+                <span>🐦</span>
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 rounded-full flex items-center justify-center transition-all hover:scale-110"
+                style="background: rgba(255, 255, 255, 0.1)"
+              >
+                <span>����</span>
+              </a>
+            </div>
+          </div>
+          <div
+            class="mt-8 pt-8 text-center"
+            style="border-top: 1px solid rgba(255, 255, 255, 0.1)"
+          >
+            <p class="text-sm" style="color: rgba(255, 255, 255, 0.4)">
+              © 2024 VéloParis. Hecho con 💛 en París. Demo/Simulación.
+            </p>
+          </div>
+        </div>
+      </footer>
     </div>
+    <script>
+      const defaultConfig = {
+        hero_title: "Descubre París en bicicleta",
+        hero_subtitle:
+          "La forma más elegante y sostenible de explorar la Ciudad de la Luz. Reserva una bici en segundos y vive París como un local.",
+        cta_button: "🚲 Reservar Ahora",
+        feature_1_title: "Descarga la App",
+        feature_2_title: "Desbloquea tu Bici",
+        feature_3_title: "¡A Pedalear!",
+        background_color: "#fefefe",
+        surface_color: "#ffffff",
+        text_color: "#1a1a2e",
+        primary_action_color: "#d4af37",
+        secondary_text_color: "#4a4a5a",
+      };
+
+      let config = { ...defaultConfig };
+
+      async function onConfigChange(cfg) {
+        config = { ...defaultConfig, ...cfg };
+
+        // Update hero title
+        const heroTitle = document.getElementById("hero-title");
+        if (heroTitle) {
+          heroTitle.innerHTML = `${config.hero_title
+            .split(" ")
+            .slice(0, 2)
+            .join(" ")}<br><span class="gradient-text">${
+            config.hero_title.split(" ").slice(2).join(" ") || "en bicicleta"
+          }</span>`;
+        }
+
+        // Update hero subtitle
+        const heroSubtitle = document.getElementById("hero-subtitle");
+        if (heroSubtitle) {
+          heroSubtitle.textContent = config.hero_subtitle;
+        }
+
+        // Update CTA button
+        const ctaBtn = document.getElementById("cta-btn");
+        if (ctaBtn) {
+          ctaBtn.textContent = config.cta_button;
+        }
+
+        // Update features
+        const feature1 = document.getElementById("feature-1");
+        if (feature1) feature1.textContent = config.feature_1_title;
+
+        const feature2 = document.getElementById("feature-2");
+        if (feature2) feature2.textContent = config.feature_2_title;
+
+        const feature3 = document.getElementById("feature-3");
+        if (feature3) feature3.textContent = config.feature_3_title;
+
+        // Apply colors
+        document
+          .querySelectorAll(
+            '[style*="background: #d4af37"], [style*="background:#d4af37"]'
+          )
+          .forEach((el) => {
+            el.style.background = config.primary_action_color;
+          });
+
+        document
+          .querySelectorAll(
+            '[style*="color: #d4af37"], [style*="color:#d4af37"]'
+          )
+          .forEach((el) => {
+            el.style.color = config.primary_action_color;
+          });
+      }
+
+      function mapToCapabilities(cfg) {
+        return {
+          recolorables: [
+            {
+              get: () => cfg.background_color || defaultConfig.background_color,
+              set: (value) => {
+                cfg.background_color = value;
+                window.elementSdk.setConfig({ background_color: value });
+              },
+            },
+            {
+              get: () => cfg.surface_color || defaultConfig.surface_color,
+              set: (value) => {
+                cfg.surface_color = value;
+                window.elementSdk.setConfig({ surface_color: value });
+              },
+            },
+            {
+              get: () => cfg.text_color || defaultConfig.text_color,
+              set: (value) => {
+                cfg.text_color = value;
+                window.elementSdk.setConfig({ text_color: value });
+              },
+            },
+            {
+              get: () =>
+                cfg.primary_action_color || defaultConfig.primary_action_color,
+              set: (value) => {
+                cfg.primary_action_color = value;
+                window.elementSdk.setConfig({ primary_action_color: value });
+              },
+            },
+            {
+              get: () =>
+                cfg.secondary_text_color || defaultConfig.secondary_text_color,
+              set: (value) => {
+                cfg.secondary_text_color = value;
+                window.elementSdk.setConfig({ secondary_text_color: value });
+              },
+            },
+          ],
+          borderables: [],
+          fontEditable: undefined,
+          fontSizeable: undefined,
+        };
+      }
+
+      function mapToEditPanelValues(cfg) {
+        return new Map([
+          ["hero_title", cfg.hero_title || defaultConfig.hero_title],
+          ["hero_subtitle", cfg.hero_subtitle || defaultConfig.hero_subtitle],
+          ["cta_button", cfg.cta_button || defaultConfig.cta_button],
+          [
+            "feature_1_title",
+            cfg.feature_1_title || defaultConfig.feature_1_title,
+          ],
+          [
+            "feature_2_title",
+            cfg.feature_2_title || defaultConfig.feature_2_title,
+          ],
+          [
+            "feature_3_title",
+            cfg.feature_3_title || defaultConfig.feature_3_title,
+          ],
+        ]);
+      }
+
+      // Smooth scroll for navigation
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) {
+            target.scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+        });
+      });
+
+      // Initialize SDK
+      if (window.elementSdk) {
+        window.elementSdk.init({
+          defaultConfig,
+          onConfigChange,
+          mapToCapabilities,
+          mapToEditPanelValues,
+        });
+      }
+    </script>
+    <script>
+      (function () {
+        function c() {
+          var b = a.contentDocument || a.contentWindow.document;
+          if (b) {
+            var d = b.createElement("script");
+            d.innerHTML =
+              "window.__CF$cv$params={r:'9c800242a452a02e',t:'MTc3MDEwMTU4MS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";
+            b.getElementsByTagName("head")[0].appendChild(d);
+          }
+        }
+        if (document.body) {
+          var a = document.createElement("iframe");
+          a.height = 1;
+          a.width = 1;
+          a.style.position = "absolute";
+          a.style.top = 0;
+          a.style.left = 0;
+          a.style.border = "none";
+          a.style.visibility = "hidden";
+          document.body.appendChild(a);
+          if ("loading" !== document.readyState) c();
+          else if (window.addEventListener)
+            document.addEventListener("DOMContentLoaded", c);
+          else {
+            var e = document.onreadystatechange || function () {};
+            document.onreadystatechange = function (b) {
+              e(b);
+              "loading" !== document.readyState &&
+                ((document.onreadystatechange = e), c());
+            };
+          }
+        }
+      })();
+    </script>
   </body>
 </html>
