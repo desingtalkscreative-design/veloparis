@@ -111,46 +111,16 @@
           class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between"
         >
           <div class="flex items-center gap-3">
-            <div
-              class="w-10 h-10 rounded-full flex items-center justify-center"
-              style="background: #1a1a2e"
-            >
-              <svg width="24" height="24" viewbox="0 0 24 24" fill="none">
-                <circle
-                  cx="6"
-                  cy="17"
-                  r="3"
-                  stroke="#d4af37"
-                  stroke-width="2"
-                />
-                <circle
-                  cx="18"
-                  cy="17"
-                  r="3"
-                  stroke="#d4af37"
-                  stroke-width="2"
-                />
-                <path
-                  d="M6 17L9 9H15L18 17"
-                  stroke="#d4af37"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                />
-                <path
-                  d="M12 9V5"
-                  stroke="#d4af37"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                />
-                <path
-                  d="M10 5H14"
-                  stroke="#d4af37"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                />
-              </svg>
-            </div>
-            <span class="font-playfair text-xl font-bold" style="color: #1a1a2e"
+            <img
+              src="https://raw.githubusercontent.com/desingtalkscreative-design/veloparis/refs/heads/main/velo%20paris.png"
+              alt="VéloParis Logo"
+              class="h-14 md:h-16 w-auto"
+              loading="lazy"
+              onerror="console.error('Image failed to load:', this.src); this.style.display='none';"
+            />
+            <span
+              class="font-playfair text-xl md:text-2xl font-bold"
+              style="color: #1a1a2e"
               >VéloParis</span
             >
           </div>
@@ -175,10 +145,27 @@
             >
           </div>
           <button
-            class="px-5 py-2 rounded-full text-sm font-medium transition-all hover:scale-105"
+            class="hidden sm:block px-5 py-2 rounded-full text-sm font-medium transition-all hover:scale-105"
             style="background: #d4af37; color: #1a1a2e"
           >
             Descargar App
+          </button>
+          <button
+            class="md:hidden w-10 h-10 flex items-center justify-center rounded-lg"
+            style="background: rgba(212, 175, 55, 0.1)"
+          >
+            <svg
+              width="24"
+              height="24"
+              viewbox="0 0 24 24"
+              fill="none"
+              stroke="#1a1a2e"
+              stroke-width="2"
+            >
+              <line x1="3" y1="12" x2="21" y2="12" />
+              <line x1="3" y1="6" x2="21" y2="6" />
+              <line x1="3" y1="18" x2="21" y2="18" />
+            </svg>
           </button>
         </div>
       </nav>
@@ -226,7 +213,7 @@
             </div>
             <h1
               id="hero-title"
-              class="font-playfair text-5xl md:text-6xl lg:text-7xl font-bold leading-tight"
+              class="font-playfair text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight"
               style="color: #1a1a2e"
             >
               Descubre París<br /><span class="gradient-text"
@@ -235,7 +222,7 @@
             </h1>
             <p
               id="hero-subtitle"
-              class="text-lg md:text-xl max-w-lg"
+              class="text-base sm:text-lg md:text-xl max-w-lg"
               style="color: #4a4a5a"
             >
               La forma más elegante y sostenible de explorar la Ciudad de la
@@ -257,40 +244,44 @@
               </button>
             </div>
             <!-- Stats -->
-            <div class="flex gap-8 pt-8">
+            <div class="flex flex-wrap gap-6 sm:gap-8 pt-8">
               <div>
                 <div
-                  class="font-playfair text-3xl font-bold"
+                  class="font-playfair text-2xl sm:text-3xl font-bold"
                   style="color: #d4af37"
                 >
                   50K+
                 </div>
-                <div class="text-sm" style="color: #4a4a5a">
+                <div class="text-xs sm:text-sm" style="color: #4a4a5a">
                   Usuarios activos
                 </div>
               </div>
               <div>
                 <div
-                  class="font-playfair text-3xl font-bold"
+                  class="font-playfair text-2xl sm:text-3xl font-bold"
                   style="color: #d4af37"
                 >
                   2.5K
                 </div>
-                <div class="text-sm" style="color: #4a4a5a">Bicicletas</div>
+                <div class="text-xs sm:text-sm" style="color: #4a4a5a">
+                  Bicicletas
+                </div>
               </div>
               <div>
                 <div
-                  class="font-playfair text-3xl font-bold"
+                  class="font-playfair text-2xl sm:text-3xl font-bold"
                   style="color: #d4af37"
                 >
                   4.9★
                 </div>
-                <div class="text-sm" style="color: #4a4a5a">App Store</div>
+                <div class="text-xs sm:text-sm" style="color: #4a4a5a">
+                  App Store
+                </div>
               </div>
             </div>
           </div>
           <!-- Phone Mockup -->
-          <div class="relative flex justify-center">
+          <div class="relative hidden lg:flex justify-center">
             <div class="float-animation">
               <div
                 class="relative w-72 h-[580px] rounded-[3rem] p-3 shadow-2xl"
@@ -476,18 +467,297 @@
           </div>
         </div>
       </section>
+      <!-- Bike Types Section -->
+      <section class="py-24">
+        <div class="max-w-6xl mx-auto px-6">
+          <div class="text-center mb-16">
+            <h2
+              class="font-playfair text-3xl sm:text-4xl md:text-5xl font-bold mb-4"
+              style="color: #1a1a2e"
+            >
+              Nuestras Bicicletas
+            </h2>
+            <p
+              class="text-base sm:text-lg max-w-2xl mx-auto px-4"
+              style="color: #4a4a5a"
+            >
+              Elige la bici perfecta para tu aventura parisina
+            </p>
+          </div>
+          <!-- Bicis Individuales -->
+          <div class="mb-16">
+            <h3
+              class="font-playfair text-2xl sm:text-3xl font-bold mb-8 text-center"
+              style="color: #1a1a2e"
+            >
+              🚲 Bicicletas Individuales
+            </h3>
+            <div class="grid md:grid-cols-2 gap-8">
+              <!-- Individual 1 -->
+              <div
+                class="rounded-3xl overflow-hidden transition-all hover:shadow-2xl"
+                style="background: white"
+              >
+                <div
+                  class="h-64 sm:h-80 overflow-hidden"
+                  style="background: #f8f6f0"
+                >
+                  <img
+                    src="https://raw.githubusercontent.com/desingtalkscreative-design/veloparis/refs/heads/main/individuales%20(1).png"
+                    alt="Bicicleta Individual Clásica"
+                    class="w-full h-full object-cover"
+                    loading="lazy"
+                    onerror="console.error('Image failed to load:', this.src); this.style.background='linear-gradient(135deg, #f8f6f0 0%, #f0ece3 100%)'; this.alt='Imagen no disponible';"
+                  />
+                </div>
+                <div class="p-6">
+                  <h4
+                    class="font-playfair text-xl font-bold mb-3"
+                    style="color: #1a1a2e"
+                  >
+                    Vélo Classic
+                  </h4>
+                  <p class="text-sm mb-4" style="color: #4a4a5a">
+                    Perfecta para explorar la ciudad. Ligera, cómoda y con cesta
+                    delantera para tus compras.
+                  </p>
+                  <div class="space-y-3 mb-4">
+                    <div class="text-sm" style="color: #4a4a5a">
+                      <span>✓ Cesta delantera para compras</span><br /><span
+                        >✓ 7 velocidades Shimano</span
+                      ><br /><span>✓ Frenos V-brake seguros</span><br /><span
+                        >✓ Luces LED delanteras/traseras</span
+                      >
+                    </div>
+                  </div>
+                  <div
+                    class="flex items-center justify-between pt-3"
+                    style="border-top: 1px solid rgba(212, 175, 55, 0.2)"
+                  >
+                    <div>
+                      <div class="font-bold text-2xl" style="color: #d4af37">
+                        €2.50
+                      </div>
+                      <div class="text-xs" style="color: #4a4a5a">
+                        Primera hora
+                      </div>
+                    </div>
+                    <div class="text-right">
+                      <div class="font-bold text-lg" style="color: #1a1a2e">
+                        +€1.00
+                      </div>
+                      <div class="text-xs" style="color: #4a4a5a">
+                        Hora adicional
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Individual 2 -->
+              <div
+                class="rounded-3xl overflow-hidden transition-all hover:shadow-2xl"
+                style="background: white"
+              >
+                <div
+                  class="h-64 sm:h-80 overflow-hidden"
+                  style="background: #f8f6f0"
+                >
+                  <img
+                    src="https://raw.githubusercontent.com/desingtalkscreative-design/veloparis/refs/heads/main/individuales%20(2).png"
+                    alt="Bicicleta Individual Sport"
+                    class="w-full h-full object-cover"
+                    loading="lazy"
+                    onerror="console.error('Image failed to load:', this.src); this.style.background='linear-gradient(135deg, #f8f6f0 0%, #f0ece3 100%)'; this.alt='Imagen no disponible';"
+                  />
+                </div>
+                <div class="p-6">
+                  <h4
+                    class="font-playfair text-xl font-bold mb-3"
+                    style="color: #1a1a2e"
+                  >
+                    Vélo Sport
+                  </h4>
+                  <p class="text-sm mb-4" style="color: #4a4a5a">
+                    Para los que buscan velocidad. Diseño deportivo con frenos
+                    de disco y suspensión.
+                  </p>
+                  <div class="space-y-3 mb-4">
+                    <div class="text-sm" style="color: #4a4a5a">
+                      <span>✓ Suspensión delantera ajustable</span><br /><span
+                        >✓ 21 velocidades Shimano</span
+                      ><br /><span>✓ Frenos de disco hidráulicos</span
+                      ><br /><span>✓ Asiento deportivo ergonómico</span>
+                    </div>
+                  </div>
+                  <div
+                    class="flex items-center justify-between pt-3"
+                    style="border-top: 1px solid rgba(212, 175, 55, 0.2)"
+                  >
+                    <div>
+                      <div class="font-bold text-2xl" style="color: #d4af37">
+                        €3.50
+                      </div>
+                      <div class="text-xs" style="color: #4a4a5a">
+                        Primera hora
+                      </div>
+                    </div>
+                    <div class="text-right">
+                      <div class="font-bold text-lg" style="color: #1a1a2e">
+                        +€1.50
+                      </div>
+                      <div class="text-xs" style="color: #4a4a5a">
+                        Hora adicional
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Bicis Dobles y Porta Bebé -->
+          <div>
+            <h3
+              class="font-playfair text-2xl sm:text-3xl font-bold mb-8 text-center"
+              style="color: #1a1a2e"
+            >
+              👨‍👩‍👧 Bicicletas Familiares
+            </h3>
+            <div class="grid md:grid-cols-2 gap-8">
+              <!-- Doble/Porta Bebé 1 -->
+              <div
+                class="rounded-3xl overflow-hidden transition-all hover:shadow-2xl"
+                style="background: white"
+              >
+                <div
+                  class="h-64 sm:h-80 overflow-hidden"
+                  style="background: #f8f6f0"
+                >
+                  <img
+                    src="https://raw.githubusercontent.com/desingtalkscreative-design/veloparis/refs/heads/main/dobles%20%20y%20%20porta%20bebe%20(1).png"
+                    alt="Bicicleta con Porta Bebé"
+                    class="w-full h-full object-cover"
+                    loading="lazy"
+                    onerror="console.error('Image failed to load:', this.src); this.style.background='linear-gradient(135deg, #f8f6f0 0%, #f0ece3 100%)'; this.alt='Imagen no disponible';"
+                  />
+                </div>
+                <div class="p-6">
+                  <h4
+                    class="font-playfair text-xl font-bold mb-3"
+                    style="color: #1a1a2e"
+                  >
+                    Vélo Famille
+                  </h4>
+                  <p class="text-sm mb-4" style="color: #4a4a5a">
+                    Con asiento porta bebé seguro y homologado. Ideal para
+                    familias con niños pequeños.
+                  </p>
+                  <div class="space-y-3 mb-4">
+                    <div class="text-sm" style="color: #4a4a5a">
+                      <span>✓ Asiento bebé homologado (9-22kg)</span><br /><span
+                        >✓ Cinturón de seguridad 5 puntos</span
+                      ><br /><span>✓ Chasis reforzado extra estable</span
+                      ><br /><span>✓ Casco infantil incluido</span>
+                    </div>
+                  </div>
+                  <div
+                    class="flex items-center justify-between pt-3"
+                    style="border-top: 1px solid rgba(212, 175, 55, 0.2)"
+                  >
+                    <div>
+                      <div class="font-bold text-2xl" style="color: #d4af37">
+                        €4.00
+                      </div>
+                      <div class="text-xs" style="color: #4a4a5a">
+                        Primera hora
+                      </div>
+                    </div>
+                    <div class="text-right">
+                      <div class="font-bold text-lg" style="color: #1a1a2e">
+                        +€2.00
+                      </div>
+                      <div class="text-xs" style="color: #4a4a5a">
+                        Hora adicional
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Doble/Porta Bebé 2 -->
+              <div
+                class="rounded-3xl overflow-hidden transition-all hover:shadow-2xl"
+                style="background: white"
+              >
+                <div
+                  class="h-64 sm:h-80 overflow-hidden"
+                  style="background: #f8f6f0"
+                >
+                  <img
+                    src="https://raw.githubusercontent.com/desingtalkscreative-design/veloparis/refs/heads/main/dobles%20%20y%20%20porta%20bebe%20(2).png"
+                    alt="Bicicleta Tándem"
+                    class="w-full h-full object-cover"
+                    loading="lazy"
+                    onerror="console.error('Image failed to load:', this.src); this.style.background='linear-gradient(135deg, #f8f6f0 0%, #f0ece3 100%)'; this.alt='Imagen no disponible';"
+                  />
+                </div>
+                <div class="p-6">
+                  <h4
+                    class="font-playfair text-xl font-bold mb-3"
+                    style="color: #1a1a2e"
+                  >
+                    Vélo Duo
+                  </h4>
+                  <p class="text-sm mb-4" style="color: #4a4a5a">
+                    Bicicleta para dos personas. Pedalea en pareja y disfruta de
+                    París juntos.
+                  </p>
+                  <div class="space-y-3 mb-4">
+                    <div class="text-sm" style="color: #4a4a5a">
+                      <span>✓ 2 asientos acolchados</span><br /><span
+                        >✓ Pedales independientes sincronizados</span
+                      ><br /><span>✓ Carga máxima 180kg</span><br /><span
+                        >✓ Manillar doble ajustable</span
+                      >
+                    </div>
+                  </div>
+                  <div
+                    class="flex items-center justify-between pt-3"
+                    style="border-top: 1px solid rgba(212, 175, 55, 0.2)"
+                  >
+                    <div>
+                      <div class="font-bold text-2xl" style="color: #d4af37">
+                        €5.00
+                      </div>
+                      <div class="text-xs" style="color: #4a4a5a">
+                        Primera hora
+                      </div>
+                    </div>
+                    <div class="text-right">
+                      <div class="font-bold text-lg" style="color: #1a1a2e">
+                        +€2.50
+                      </div>
+                      <div class="text-xs" style="color: #4a4a5a">
+                        Hora adicional
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <!-- How it Works -->
       <section id="how" class="py-24" style="background: #1a1a2e">
         <div class="max-w-6xl mx-auto px-6">
           <div class="text-center mb-16">
             <h2
-              class="font-playfair text-4xl md:text-5xl font-bold mb-4"
+              class="font-playfair text-3xl sm:text-4xl md:text-5xl font-bold mb-4"
               style="color: #fefefe"
             >
               Cómo funciona
             </h2>
             <p
-              class="text-lg max-w-2xl mx-auto"
+              class="text-base sm:text-lg max-w-2xl mx-auto px-4"
               style="color: rgba(255, 255, 255, 0.7)"
             >
               En solo 3 pasos estarás pedaleando por los Campos Elíseos
@@ -597,12 +867,15 @@
         <div class="max-w-6xl mx-auto px-6">
           <div class="text-center mb-16">
             <h2
-              class="font-playfair text-4xl md:text-5xl font-bold mb-4"
+              class="font-playfair text-3xl sm:text-4xl md:text-5xl font-bold mb-4"
               style="color: #1a1a2e"
             >
               Rutas Populares
             </h2>
-            <p class="text-lg max-w-2xl mx-auto" style="color: #4a4a5a">
+            <p
+              class="text-base sm:text-lg max-w-2xl mx-auto px-4"
+              style="color: #4a4a5a"
+            >
               Descubre los mejores itinerarios creados por locales y turistas
             </p>
           </div>
@@ -702,7 +975,7 @@
                   La Parisienne Classique
                 </h3>
                 <p class="text-sm mb-4" style="color: #4a4a5a">
-                  Torre Eiffel → Champs-Élysées → Louvre
+                  Torre Eiffel → Champs-Élysées ����� Louvre
                 </p>
                 <div class="flex items-center justify-between">
                   <div
@@ -1012,12 +1285,15 @@
         <div class="max-w-6xl mx-auto px-6">
           <div class="text-center mb-16">
             <h2
-              class="font-playfair text-4xl md:text-5xl font-bold mb-4"
+              class="font-playfair text-3xl sm:text-4xl md:text-5xl font-bold mb-4"
               style="color: #1a1a2e"
             >
               Precios Simples
             </h2>
-            <p class="text-lg max-w-2xl mx-auto" style="color: #4a4a5a">
+            <p
+              class="text-base sm:text-lg max-w-2xl mx-auto px-4"
+              style="color: #4a4a5a"
+            >
               Sin sorpresas. Paga solo por lo que uses.
             </p>
           </div>
@@ -1039,19 +1315,19 @@
                   <span
                     class="font-playfair text-4xl font-bold"
                     style="color: #d4af37"
-                    >€0.05</span
+                    >€0.08</span
                   >
                   <span style="color: #4a4a5a">/min</span>
                 </div>
                 <ul class="text-left space-y-3 mb-8">
                   <li class="flex items-center gap-2" style="color: #4a4a5a">
-                    <span style="color: #d4af37">✓</span> Desbloqueo €1
+                    <span style="color: #d4af37">✓</span> €2.50 primera hora
                   </li>
                   <li class="flex items-center gap-2" style="color: #4a4a5a">
                     <span style="color: #d4af37">✓</span> Sin compromiso
                   </li>
                   <li class="flex items-center gap-2" style="color: #4a4a5a">
-                    <span style="color: #d4af37">✓</span> Ideal para paseos
+                    <span style="color: #d4af37">✓</span> Perfecto para tours
                     cortos
                   </li>
                 </ul>
@@ -1086,7 +1362,7 @@
                   <span
                     class="font-playfair text-4xl font-bold"
                     style="color: #d4af37"
-                    >€15</span
+                    >€18</span
                   >
                   <span style="color: rgba(255, 255, 255, 0.6)">/24h</span>
                 </div>
@@ -1135,7 +1411,7 @@
                   <span
                     class="font-playfair text-4xl font-bold"
                     style="color: #d4af37"
-                    >€35</span
+                    >€42</span
                   >
                   <span style="color: #4a4a5a">/7 días</span>
                 </div>
@@ -1165,7 +1441,7 @@
       <section class="py-24" style="background: #1a1a2e">
         <div class="max-w-4xl mx-auto px-6 text-center">
           <h2
-            class="font-playfair text-4xl md:text-5xl font-bold mb-6"
+            class="font-playfair text-3xl sm:text-4xl md:text-5xl font-bold mb-6"
             style="color: #fefefe"
           >
             Tu aventura parisina<br /><span style="color: #d4af37"
@@ -1173,7 +1449,7 @@
             >
           </h2>
           <p
-            class="text-lg mb-10 max-w-2xl mx-auto"
+            class="text-base sm:text-lg mb-10 max-w-2xl mx-auto"
             style="color: rgba(255, 255, 255, 0.7)"
           >
             Únete a miles de turistas que ya descubrieron la mejor forma de
@@ -1224,47 +1500,15 @@
             class="flex flex-col md:flex-row items-center justify-between gap-6"
           >
             <div class="flex items-center gap-3">
-              <div
-                class="w-10 h-10 rounded-full flex items-center justify-center"
-                style="background: #d4af37"
-              >
-                <svg width="24" height="24" viewbox="0 0 24 24" fill="none">
-                  <circle
-                    cx="6"
-                    cy="17"
-                    r="3"
-                    stroke="#1a1a2e"
-                    stroke-width="2"
-                  />
-                  <circle
-                    cx="18"
-                    cy="17"
-                    r="3"
-                    stroke="#1a1a2e"
-                    stroke-width="2"
-                  />
-                  <path
-                    d="M6 17L9 9H15L18 17"
-                    stroke="#1a1a2e"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                  />
-                  <path
-                    d="M12 9V5"
-                    stroke="#1a1a2e"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                  />
-                  <path
-                    d="M10 5H14"
-                    stroke="#1a1a2e"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                  />
-                </svg>
-              </div>
+              <img
+                src="https://raw.githubusercontent.com/desingtalkscreative-design/veloparis/refs/heads/main/velo%20paris.png"
+                alt="VéloParis Logo"
+                class="h-12 md:h-14 w-auto"
+                loading="lazy"
+                onerror="console.error('Image failed to load:', this.src); this.style.display='none';"
+              />
               <span
-                class="font-playfair text-xl font-bold"
+                class="font-playfair text-xl md:text-2xl font-bold"
                 style="color: #fefefe"
                 >VéloParis</span
               >
@@ -1323,6 +1567,149 @@
           </div>
         </div>
       </footer>
+    </div>
+    <!-- Chatbot Widget -->
+    <div id="chatbot-container" class="fixed bottom-6 right-6 z-50">
+      <!-- Chat Button -->
+      <button
+        id="chat-toggle"
+        class="w-16 h-16 rounded-full shadow-2xl flex items-center justify-center transition-all hover:scale-110 pulse-glow"
+        style="background: #d4af37"
+      >
+        <span class="text-3xl" id="chat-icon">💬</span>
+      </button>
+      <!-- Chat Window -->
+      <div
+        id="chat-window"
+        class="absolute bottom-20 right-0 w-80 sm:w-96 rounded-3xl shadow-2xl overflow-hidden transition-all transform origin-bottom-right"
+        style="background: white; display: none; max-height: 500px"
+      >
+        <!-- Chat Header -->
+        <div
+          class="p-4 flex items-center justify-between"
+          style="background: linear-gradient(135deg, #1a1a2e 0%, #2a2a3e 100%)"
+        >
+          <div class="flex items-center gap-3">
+            <div
+              class="w-10 h-10 rounded-full flex items-center justify-center"
+              style="background: #d4af37"
+            >
+              <span class="text-xl">🤖</span>
+            </div>
+            <div>
+              <div class="font-semibold text-sm" style="color: #fefefe">
+                Asistente VéloParis
+              </div>
+              <div class="text-xs flex items-center gap-1">
+                <span
+                  class="w-2 h-2 rounded-full animate-pulse"
+                  style="background: #4ade80"
+                ></span>
+                <span style="color: rgba(255, 255, 255, 0.7)">En línea</span>
+              </div>
+            </div>
+          </div>
+          <button
+            id="chat-close"
+            class="w-8 h-8 rounded-full flex items-center justify-center transition-all hover:scale-110"
+            style="background: rgba(255, 255, 255, 0.1)"
+          >
+            <span style="color: #fefefe">✕</span>
+          </button>
+        </div>
+        <!-- Chat Messages -->
+        <div
+          id="chat-messages"
+          class="p-4 space-y-3 overflow-y-auto"
+          style="height: 320px; background: #f8f6f0"
+        >
+          <!-- Welcome Message -->
+          <div class="flex gap-2">
+            <div
+              class="w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0"
+              style="background: #d4af37"
+            >
+              <span>🤖</span>
+            </div>
+            <div class="flex-1">
+              <div
+                class="p-3 rounded-2xl rounded-tl-none text-sm"
+                style="background: white; color: #1a1a2e"
+              >
+                ¡Hola! 👋 Soy tu asistente virtual de VéloParis. ¿En qué puedo
+                ayudarte hoy?
+              </div>
+              <div class="text-xs mt-1" style="color: #4a4a5a">Ahora</div>
+            </div>
+          </div>
+        </div>
+        <!-- Quick Actions -->
+        <div
+          id="quick-actions"
+          class="p-3 space-y-2"
+          style="
+            background: #f8f6f0;
+            border-top: 1px solid rgba(212, 175, 55, 0.2);
+          "
+        >
+          <div class="text-xs font-semibold mb-2" style="color: #4a4a5a">
+            Respuestas rápidas:
+          </div>
+          <button
+            class="quick-action-btn w-full p-2 rounded-xl text-left text-sm transition-all hover:scale-102"
+            style="background: white; color: #1a1a2e"
+            data-message="¿Cómo reservo una bicicleta?"
+          >
+            🚲 ¿Cómo reservar una bici?
+          </button>
+          <button
+            class="quick-action-btn w-full p-2 rounded-xl text-left text-sm transition-all hover:scale-102"
+            style="background: white; color: #1a1a2e"
+            data-message="¿Cuáles son los precios?"
+          >
+            💰 Ver precios
+          </button>
+          <button
+            class="quick-action-btn w-full p-2 rounded-xl text-left text-sm transition-all hover:scale-102"
+            style="background: white; color: #1a1a2e"
+            data-message="¿Dónde están ubicados?"
+          >
+            📍 Ubicación y horarios
+          </button>
+          <button
+            class="quick-action-btn w-full p-2 rounded-xl text-left text-sm transition-all hover:scale-102"
+            style="background: white; color: #1a1a2e"
+            data-message="Necesito ayuda técnica"
+          >
+            🛠️ Soporte técnico
+          </button>
+        </div>
+        <!-- Chat Input -->
+        <div
+          class="p-3"
+          style="
+            background: white;
+            border-top: 1px solid rgba(212, 175, 55, 0.2);
+          "
+        >
+          <div class="flex gap-2">
+            <input
+              type="text"
+              id="chat-input"
+              placeholder="Escribe tu mensaje..."
+              class="flex-1 px-4 py-2 rounded-full text-sm outline-none"
+              style="background: #f8f6f0; color: #1a1a2e"
+            />
+            <button
+              id="chat-send"
+              class="w-10 h-10 rounded-full flex items-center justify-center transition-all hover:scale-110"
+              style="background: #d4af37"
+            >
+              <span style="color: #1a1a2e">➤</span>
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
     <script>
       const defaultConfig = {
@@ -1483,6 +1870,172 @@
           mapToEditPanelValues,
         });
       }
+
+      // Chatbot functionality
+      const chatToggle = document.getElementById("chat-toggle");
+      const chatWindow = document.getElementById("chat-window");
+      const chatClose = document.getElementById("chat-close");
+      const chatIcon = document.getElementById("chat-icon");
+      const chatMessages = document.getElementById("chat-messages");
+      const chatInput = document.getElementById("chat-input");
+      const chatSend = document.getElementById("chat-send");
+      const quickActionBtns = document.querySelectorAll(".quick-action-btn");
+
+      let isChatOpen = false;
+
+      // Bot responses database
+      const botResponses = {
+        "¿Cómo reservo una bicicleta?": {
+          text: "¡Es muy fácil! 📱\n\n1. Descarga la app VéloParis\n2. Regístrate con tu email\n3. Encuentra una bici cercana en el mapa\n4. Escanea el código QR\n5. ¡A pedalear!\n\nLa primera hora cuesta desde €2.50 según el modelo.",
+          delay: 1000,
+        },
+        "¿Cuáles son los precios?": {
+          text: "Nuestras tarifas son:\n\n🚲 Vélo Classic: €2.50/1h + €1.00 cada hora extra\n🏃 Vélo Sport: €3.50/1h + €1.50 cada hora extra\n👨‍👩‍👧 Vélo Famille: €4.00/1h + €2.00 cada hora extra\n👫 Vélo Duo: €5.00/1h + €2.50 cada hora extra\n\n¡También tenemos pases día y semana con descuento!",
+          delay: 1200,
+        },
+        "¿Dónde están ubicados?": {
+          text: "📍 Nuestra oficina central está en:\n\n45 Avenue des Champs-Élysées\n75008 Paris, France\n\n📞 Teléfono: +33 1 42 56 38 90\n✉️ Email: contact@veloparis.fr\n\n🕐 Horarios:\nLun-Vie: 8:00-20:00\nSábados: 9:00-22:00\nDomingos: 10:00-19:00\n\n¡Servicio 24/7 por app!",
+          delay: 1300,
+        },
+        "Necesito ayuda técnica": {
+          text: "🛠️ Estoy aquí para ayudarte.\n\n¿Tienes problemas con:\n• La app no abre\n• No puedo desbloquear la bici\n• Problema con el pago\n• La bici tiene un defecto\n• Otro problema\n\nPor favor describe tu situación y te ayudaré de inmediato. Para emergencias llama al +33 1 42 56 38 90",
+          delay: 1100,
+        },
+        default: {
+          text: "Gracias por tu mensaje. 😊\n\nPara una atención más específica, puedes:\n\n📞 Llamarnos: +33 1 42 56 38 90\n✉️ Escribirnos: contact@veloparis.fr\n💬 Usar las respuestas rápidas abajo\n\n¿Hay algo más en lo que pueda ayudarte?",
+          delay: 800,
+        },
+      };
+
+      function toggleChat() {
+        isChatOpen = !isChatOpen;
+        if (isChatOpen) {
+          chatWindow.style.display = "block";
+          setTimeout(() => {
+            chatWindow.style.transform = "scale(1)";
+            chatWindow.style.opacity = "1";
+          }, 10);
+          chatIcon.textContent = "✕";
+          chatInput.focus();
+        } else {
+          chatWindow.style.transform = "scale(0.8)";
+          chatWindow.style.opacity = "0";
+          setTimeout(() => {
+            chatWindow.style.display = "none";
+          }, 200);
+          chatIcon.textContent = "💬";
+        }
+      }
+
+      function addMessage(text, isUser = false) {
+        const messageDiv = document.createElement("div");
+        messageDiv.className =
+          "flex gap-2 " + (isUser ? "flex-row-reverse" : "");
+
+        const time = new Date().toLocaleTimeString("es-ES", {
+          hour: "2-digit",
+          minute: "2-digit",
+        });
+
+        messageDiv.innerHTML = `
+        ${
+          !isUser
+            ? `
+          <div class="w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0" style="background: #d4af37;">
+            <span>🤖</span>
+          </div>
+        `
+            : ""
+        }
+        <div class="flex-1 ${isUser ? "flex flex-col items-end" : ""}">
+          <div class="p-3 rounded-2xl text-sm ${
+            isUser ? "rounded-tr-none" : "rounded-tl-none"
+          }" style="background: ${
+          isUser ? "#d4af37" : "white"
+        }; color: #1a1a2e; white-space: pre-line; max-width: 85%;">
+            ${text}
+          </div>
+          <div class="text-xs mt-1" style="color: #4a4a5a;">${time}</div>
+        </div>
+      `;
+
+        chatMessages.appendChild(messageDiv);
+        chatMessages.scrollTop = chatMessages.scrollHeight;
+      }
+
+      function showTypingIndicator() {
+        const typingDiv = document.createElement("div");
+        typingDiv.id = "typing-indicator";
+        typingDiv.className = "flex gap-2";
+        typingDiv.innerHTML = `
+        <div class="w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0" style="background: #d4af37;">
+          <span>🤖</span>
+        </div>
+        <div class="p-3 rounded-2xl rounded-tl-none" style="background: white;">
+          <div class="flex gap-1">
+            <span class="w-2 h-2 rounded-full animate-pulse" style="background: #d4af37;"></span>
+            <span class="w-2 h-2 rounded-full animate-pulse" style="background: #d4af37; animation-delay: 0.2s;"></span>
+            <span class="w-2 h-2 rounded-full animate-pulse" style="background: #d4af37; animation-delay: 0.4s;"></span>
+          </div>
+        </div>
+      `;
+        chatMessages.appendChild(typingDiv);
+        chatMessages.scrollTop = chatMessages.scrollHeight;
+      }
+
+      function removeTypingIndicator() {
+        const typingIndicator = document.getElementById("typing-indicator");
+        if (typingIndicator) {
+          typingIndicator.remove();
+        }
+      }
+
+      function sendMessage(message) {
+        if (!message.trim()) return;
+
+        // Add user message
+        addMessage(message, true);
+        chatInput.value = "";
+
+        // Show typing indicator
+        showTypingIndicator();
+
+        // Get bot response
+        const response = botResponses[message] || botResponses.default;
+
+        // Simulate bot typing delay
+        setTimeout(() => {
+          removeTypingIndicator();
+          addMessage(response.text);
+        }, response.delay);
+      }
+
+      // Event listeners
+      chatToggle.addEventListener("click", toggleChat);
+      chatClose.addEventListener("click", toggleChat);
+
+      chatSend.addEventListener("click", () => {
+        sendMessage(chatInput.value);
+      });
+
+      chatInput.addEventListener("keypress", (e) => {
+        if (e.key === "Enter") {
+          e.preventDefault();
+          sendMessage(chatInput.value);
+        }
+      });
+
+      quickActionBtns.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          const message = btn.dataset.message;
+          sendMessage(message);
+        });
+      });
+
+      // Initialize chat window styles
+      chatWindow.style.transform = "scale(0.8)";
+      chatWindow.style.opacity = "0";
+      chatWindow.style.transition = "all 0.2s ease";
     </script>
     <script>
       (function () {
@@ -1491,7 +2044,7 @@
           if (b) {
             var d = b.createElement("script");
             d.innerHTML =
-              "window.__CF$cv$params={r:'9c800242a452a02e',t:'MTc3MDEwMTU4MS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";
+              "window.__CF$cv$params={r:'9c803236b1bcdc94',t:'MTc3MDEwMzU0NS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";
             b.getElementsByTagName("head")[0].appendChild(d);
           }
         }
