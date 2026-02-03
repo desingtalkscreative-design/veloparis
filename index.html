@@ -126,10 +126,10 @@
           </div>
           <div class="hidden md:flex items-center gap-8">
             <a
-              href="#how"
+              href="#quienes-somos"
               class="text-sm font-medium hover:opacity-70 transition-opacity"
               style="color: #1a1a2e"
-              >Cómo funciona</a
+              >Quiénes Somos</a
             >
             <a
               href="#routes"
@@ -151,10 +151,12 @@
             Descargar App
           </button>
           <button
+            id="mobile-menu-btn"
             class="md:hidden w-10 h-10 flex items-center justify-center rounded-lg"
             style="background: rgba(212, 175, 55, 0.1)"
           >
             <svg
+              id="menu-icon"
               width="24"
               height="24"
               viewbox="0 0 24 24"
@@ -167,6 +169,52 @@
               <line x1="3" y1="18" x2="21" y2="18" />
             </svg>
           </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div
+          id="mobile-menu"
+          class="md:hidden overflow-hidden transition-all"
+          style="
+            max-height: 0;
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(10px);
+          "
+        >
+          <div class="px-6 py-4 space-y-4">
+            <a
+              href="#quienes-somos"
+              class="mobile-menu-link block py-3 text-base font-medium hover:opacity-70 transition-opacity"
+              style="
+                color: #1a1a2e;
+                border-bottom: 1px solid rgba(212, 175, 55, 0.1);
+              "
+              >Quiénes Somos</a
+            >
+            <a
+              href="#routes"
+              class="mobile-menu-link block py-3 text-base font-medium hover:opacity-70 transition-opacity"
+              style="
+                color: #1a1a2e;
+                border-bottom: 1px solid rgba(212, 175, 55, 0.1);
+              "
+              >Rutas</a
+            >
+            <a
+              href="#pricing"
+              class="mobile-menu-link block py-3 text-base font-medium hover:opacity-70 transition-opacity"
+              style="
+                color: #1a1a2e;
+                border-bottom: 1px solid rgba(212, 175, 55, 0.1);
+              "
+              >Precios</a
+            >
+            <button
+              class="w-full px-5 py-3 rounded-full text-base font-medium transition-all hover:scale-105"
+              style="background: #d4af37; color: #1a1a2e"
+            >
+              Descargar App
+            </button>
+          </div>
         </div>
       </nav>
       <!-- Hero Section -->
@@ -234,7 +282,7 @@
                 class="px-8 py-4 rounded-full text-lg font-semibold transition-all hover:scale-105 pulse-glow"
                 style="background: #d4af37; color: #1a1a2e"
               >
-                🚲 Reservar Ahora
+                Reservar Ahora
               </button>
               <button
                 class="px-8 py-4 rounded-full text-lg font-medium border-2 transition-all hover:scale-105"
@@ -490,7 +538,7 @@
               class="font-playfair text-2xl sm:text-3xl font-bold mb-8 text-center"
               style="color: #1a1a2e"
             >
-              🚲 Bicicletas Individuales
+              Bicicletas Individuales
             </h3>
             <div class="grid md:grid-cols-2 gap-8">
               <!-- Individual 1 -->
@@ -620,7 +668,7 @@
               class="font-playfair text-2xl sm:text-3xl font-bold mb-8 text-center"
               style="color: #1a1a2e"
             >
-              👨‍👩‍👧 Bicicletas Familiares
+              Bicicletas Familiares
             </h3>
             <div class="grid md:grid-cols-2 gap-8">
               <!-- Doble/Porta Bebé 1 -->
@@ -746,6 +794,324 @@
           </div>
         </div>
       </section>
+      <!-- Quiénes Somos Section -->
+      <section id="quienes-somos" class="py-24" style="background: #f8f6f0">
+        <div class="max-w-6xl mx-auto px-6">
+          <!-- Introducción -->
+          <div class="text-center mb-20">
+            <h2
+              class="font-playfair text-3xl sm:text-4xl md:text-5xl font-bold mb-6"
+              style="color: #1a1a2e"
+            >
+              Quiénes Somos
+            </h2>
+            <p
+              class="text-base sm:text-lg max-w-3xl mx-auto px-4 leading-relaxed"
+              style="color: #4a4a5a"
+            >
+              VéloParis nació en 2018 con una visión clara: transformar la
+              movilidad urbana en París mediante bicicletas sostenibles y
+              accesibles. Somos un equipo apasionado por el ciclismo, la
+              tecnología y el medio ambiente, dedicados a hacer de París una
+              ciudad más verde y conectada.
+            </p>
+          </div>
+          <!-- Misión, Visión y Valores Grid -->
+          <div class="grid md:grid-cols-3 gap-8 mb-20">
+            <!-- Misión -->
+            <div
+              class="p-8 rounded-3xl transition-all hover:shadow-2xl"
+              style="background: white"
+            >
+              <div
+                class="w-16 h-16 mx-auto mb-6 rounded-2xl flex items-center justify-center"
+                style="background: rgba(212, 175, 55, 0.15)"
+              >
+                <span class="text-4xl"></span>
+              </div>
+              <h3
+                class="font-playfair text-2xl font-bold mb-4 text-center"
+                style="color: #1a1a2e"
+              >
+                Nuestra Misión
+              </h3>
+              <p class="text-center leading-relaxed" style="color: #4a4a5a">
+                Proporcionar una alternativa de movilidad sostenible, accesible
+                y elegante que permita a residentes y turistas explorar París de
+                manera ecológica, reduciendo la huella de carbono y promoviendo
+                un estilo de vida saludable.
+              </p>
+            </div>
+            <!-- Visión -->
+            <div
+              class="p-8 rounded-3xl transition-all hover:shadow-2xl"
+              style="background: white"
+            >
+              <div
+                class="w-16 h-16 mx-auto mb-6 rounded-2xl flex items-center justify-center"
+                style="background: rgba(212, 175, 55, 0.15)"
+              >
+                <span class="text-4xl"></span>
+              </div>
+              <h3
+                class="font-playfair text-2xl font-bold mb-4 text-center"
+                style="color: #1a1a2e"
+              >
+                Nuestra Visión
+              </h3>
+              <p class="text-center leading-relaxed" style="color: #4a4a5a">
+                Ser la plataforma líder de movilidad ciclista en Europa para
+                2030, expandiendo nuestro modelo a 50 ciudades y contribuyendo
+                activamente a la creación de metrópolis más limpias, saludables
+                y habitables para todos.
+              </p>
+            </div>
+            <!-- Valores -->
+            <div
+              class="p-8 rounded-3xl transition-all hover:shadow-2xl"
+              style="background: white"
+            >
+              <div
+                class="w-16 h-16 mx-auto mb-6 rounded-2xl flex items-center justify-center"
+                style="background: rgba(212, 175, 55, 0.15)"
+              >
+                <span class="text-4xl"></span>
+              </div>
+              <h3
+                class="font-playfair text-2xl font-bold mb-4 text-center"
+                style="color: #1a1a2e"
+              >
+                Nuestros Valores
+              </h3>
+              <div class="space-y-3">
+                <div class="flex items-start gap-2">
+                  <span style="color: #d4af37">✓</span>
+                  <p class="text-sm" style="color: #4a4a5a">
+                    <strong>Sostenibilidad:</strong> Compromiso con el planeta
+                  </p>
+                </div>
+                <div class="flex items-start gap-2">
+                  <span style="color: #d4af37">✓</span>
+                  <p class="text-sm" style="color: #4a4a5a">
+                    <strong>Innovación:</strong> Tecnología al servicio del
+                    usuario
+                  </p>
+                </div>
+                <div class="flex items-start gap-2">
+                  <span style="color: #d4af37">✓</span>
+                  <p class="text-sm" style="color: #4a4a5a">
+                    <strong>Accesibilidad:</strong> Movilidad para todos
+                  </p>
+                </div>
+                <div class="flex items-start gap-2">
+                  <span style="color: #d4af37">✓</span>
+                  <p class="text-sm" style="color: #4a4a5a">
+                    <strong>Excelencia:</strong> Calidad en cada pedaleo
+                  </p>
+                </div>
+                <div class="flex items-start gap-2">
+                  <span style="color: #d4af37">✓</span>
+                  <p class="text-sm" style="color: #4a4a5a">
+                    <strong>Comunidad:</strong> Construyendo juntos
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Nuestro Equipo -->
+          <div class="text-center mb-12">
+            <h3
+              class="font-playfair text-2xl sm:text-3xl md:text-4xl font-bold mb-4"
+              style="color: #1a1a2e"
+            >
+              Nuestro Equipo
+            </h3>
+            <p
+              class="text-base sm:text-lg max-w-2xl mx-auto px-4"
+              style="color: #4a4a5a"
+            >
+              Profesionales apasionados que trabajan cada día para mejorar tu
+              experiencia
+            </p>
+          </div>
+          <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- Team Member 1 -->
+            <div
+              class="text-center p-6 rounded-3xl transition-all hover:shadow-xl"
+              style="background: white"
+            >
+              <div
+                class="w-24 h-24 mx-auto mb-4 rounded-full flex items-center justify-center text-4xl"
+                style="
+                  background: linear-gradient(135deg, #d4af37 0%, #f0d98c 100%);
+                "
+              >
+                👨‍💼
+              </div>
+              <h4 class="font-semibold text-lg mb-1" style="color: #1a1a2e">
+                Jean-Pierre Dubois
+              </h4>
+              <p class="text-sm mb-2" style="color: #d4af37">
+                CEO &amp; Fundador
+              </p>
+              <p class="text-xs leading-relaxed" style="color: #4a4a5a">
+                Ex-ingeniero de transporte urbano con 15 años de experiencia en
+                movilidad sostenible.
+              </p>
+            </div>
+            <!-- Team Member 2 -->
+            <div
+              class="text-center p-6 rounded-3xl transition-all hover:shadow-xl"
+              style="background: white"
+            >
+              <div
+                class="w-24 h-24 mx-auto mb-4 rounded-full flex items-center justify-center text-4xl"
+                style="
+                  background: linear-gradient(135deg, #d4af37 0%, #f0d98c 100%);
+                "
+              >
+                👩‍💻
+              </div>
+              <h4 class="font-semibold text-lg mb-1" style="color: #1a1a2e">
+                Sophie Martin
+              </h4>
+              <p class="text-sm mb-2" style="color: #d4af37">CTO</p>
+              <p class="text-xs leading-relaxed" style="color: #4a4a5a">
+                Experta en desarrollo de apps móviles e IoT para sistemas de
+                transporte inteligente.
+              </p>
+            </div>
+            <!-- Team Member 3 -->
+            <div
+              class="text-center p-6 rounded-3xl transition-all hover:shadow-xl"
+              style="background: white"
+            >
+              <div
+                class="w-24 h-24 mx-auto mb-4 rounded-full flex items-center justify-center text-4xl"
+                style="
+                  background: linear-gradient(135deg, #d4af37 0%, #f0d98c 100%);
+                "
+              >
+                👨‍🎨
+              </div>
+              <h4 class="font-semibold text-lg mb-1" style="color: #1a1a2e">
+                Luc Renard
+              </h4>
+              <p class="text-sm mb-2" style="color: #d4af37">
+                Director Creativo
+              </p>
+              <p class="text-xs leading-relaxed" style="color: #4a4a5a">
+                Diseñador UX/UI especializado en crear experiencias digitales
+                excepcionales.
+              </p>
+            </div>
+            <!-- Team Member 4 -->
+            <div
+              class="text-center p-6 rounded-3xl transition-all hover:shadow-xl"
+              style="background: white"
+            >
+              <div
+                class="w-24 h-24 mx-auto mb-4 rounded-full flex items-center justify-center text-4xl"
+                style="
+                  background: linear-gradient(135deg, #d4af37 0%, #f0d98c 100%);
+                "
+              >
+                👩‍🔧
+              </div>
+              <h4 class="font-semibold text-lg mb-1" style="color: #1a1a2e">
+                Marie Leclerc
+              </h4>
+              <p class="text-sm mb-2" style="color: #d4af37">
+                Jefa de Operaciones
+              </p>
+              <p class="text-xs leading-relaxed" style="color: #4a4a5a">
+                Responsable de mantener nuestra flota en perfecto estado y
+                optimizar rutas.
+              </p>
+            </div>
+          </div>
+          <!-- Stats Section -->
+          <div
+            class="mt-20 p-12 rounded-3xl"
+            style="
+              background: linear-gradient(135deg, #1a1a2e 0%, #2a2a3e 100%);
+            "
+          >
+            <div class="text-center mb-10">
+              <h3
+                class="font-playfair text-2xl sm:text-3xl font-bold mb-3"
+                style="color: #fefefe"
+              >
+                Nuestro Impacto
+              </h3>
+              <p
+                class="text-sm sm:text-base"
+                style="color: rgba(255, 255, 255, 0.7)"
+              >
+                Datos que hablan por sí solos
+              </p>
+            </div>
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-8">
+              <div class="text-center">
+                <div
+                  class="font-playfair text-3xl sm:text-4xl font-bold mb-2"
+                  style="color: #d4af37"
+                >
+                  50K+
+                </div>
+                <div
+                  class="text-xs sm:text-sm"
+                  style="color: rgba(255, 255, 255, 0.7)"
+                >
+                  Usuarios Activos
+                </div>
+              </div>
+              <div class="text-center">
+                <div
+                  class="font-playfair text-3xl sm:text-4xl font-bold mb-2"
+                  style="color: #d4af37"
+                >
+                  2.5M
+                </div>
+                <div
+                  class="text-xs sm:text-sm"
+                  style="color: rgba(255, 255, 255, 0.7)"
+                >
+                  Viajes Realizados
+                </div>
+              </div>
+              <div class="text-center">
+                <div
+                  class="font-playfair text-3xl sm:text-4xl font-bold mb-2"
+                  style="color: #d4af37"
+                >
+                  850T
+                </div>
+                <div
+                  class="text-xs sm:text-sm"
+                  style="color: rgba(255, 255, 255, 0.7)"
+                >
+                  CO₂ Ahorrado
+                </div>
+              </div>
+              <div class="text-center">
+                <div
+                  class="font-playfair text-3xl sm:text-4xl font-bold mb-2"
+                  style="color: #d4af37"
+                >
+                  150+
+                </div>
+                <div
+                  class="text-xs sm:text-sm"
+                  style="color: rgba(255, 255, 255, 0.7)"
+                >
+                  Estaciones
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <!-- How it Works -->
       <section id="how" class="py-24" style="background: #1a1a2e">
         <div class="max-w-6xl mx-auto px-6">
@@ -771,17 +1137,7 @@
                 background: rgba(255, 255, 255, 0.05);
                 border: 1px solid rgba(212, 175, 55, 0.2);
               "
-            >
-              <div
-                class="w-16 h-16 mx-auto mb-6 rounded-2xl flex items-center justify-center"
-                style="background: #d4af37"
-              >
-                <span class="text-3xl">📱</span>
-              </div>
-              <div
-                class="font-playfair text-6xl font-bold mb-4"
-                style="color: rgba(212, 175, 55, 0.3)"
-              >
+            
                 01
               </div>
               <h3
@@ -802,17 +1158,7 @@
                 background: rgba(255, 255, 255, 0.05);
                 border: 1px solid rgba(212, 175, 55, 0.2);
               "
-            >
-              <div
-                class="w-16 h-16 mx-auto mb-6 rounded-2xl flex items-center justify-center"
-                style="background: #d4af37"
-              >
-                <span class="text-3xl">🔓</span>
-              </div>
-              <div
-                class="font-playfair text-6xl font-bold mb-4"
-                style="color: rgba(212, 175, 55, 0.3)"
-              >
+            
                 02
               </div>
               <h3
@@ -834,17 +1180,6 @@
                 background: rgba(255, 255, 255, 0.05);
                 border: 1px solid rgba(212, 175, 55, 0.2);
               "
-            >
-              <div
-                class="w-16 h-16 mx-auto mb-6 rounded-2xl flex items-center justify-center"
-                style="background: #d4af37"
-              >
-                <span class="text-3xl">🚴</span>
-              </div>
-              <div
-                class="font-playfair text-6xl font-bold mb-4"
-                style="color: rgba(212, 175, 55, 0.3)"
-              >
                 03
               </div>
               <h3
@@ -975,7 +1310,7 @@
                   La Parisienne Classique
                 </h3>
                 <p class="text-sm mb-4" style="color: #4a4a5a">
-                  Torre Eiffel → Champs-Élysées ����� Louvre
+                  Torre Eiffel → Champs-Élysées  Louvre
                 </p>
                 <div class="flex items-center justify-between">
                   <div
@@ -1304,7 +1639,7 @@
               style="background: white"
             >
               <div class="text-center">
-                <div class="text-4xl mb-4">⏱️</div>
+                <div class="text-4xl mb-4"></div>
                 <h3
                   class="font-playfair text-2xl font-bold mb-2"
                   style="color: #1a1a2e"
@@ -1351,7 +1686,7 @@
                 MÁS POPULAR
               </div>
               <div class="text-center">
-                <div class="text-4xl mb-4">☀️</div>
+                <div class="text-4xl mb-4"></div>
                 <h3
                   class="font-playfair text-2xl font-bold mb-2"
                   style="color: #fefefe"
@@ -1400,7 +1735,7 @@
               style="background: white"
             >
               <div class="text-center">
-                <div class="text-4xl mb-4">🌟</div>
+                <div class="text-4xl mb-4"></div>
                 <h3
                   class="font-playfair text-2xl font-bold mb-2"
                   style="color: #1a1a2e"
@@ -1534,27 +1869,71 @@
               >
             </div>
             <div class="flex items-center gap-4">
-              <a
-                href="#"
-                class="w-10 h-10 rounded-full flex items-center justify-center transition-all hover:scale-110"
-                style="background: rgba(255, 255, 255, 0.1)"
-              >
-                <span>📸</span>
+                  
+                <span></span>
               </a>
-              <a
-                href="#"
-                class="w-10 h-10 rounded-full flex items-center justify-center transition-all hover:scale-110"
-                style="background: rgba(255, 255, 255, 0.1)"
+            </div>
+          </div>
+          <div class="grid md:grid-cols-3 gap-8 mb-8">
+            <!-- Contacto -->
+            <div>
+              <h4 class="font-semibold mb-4 text-sm" style="color: #d4af37">
+                 CONTACTO
+              </h4>
+              <div
+                class="space-y-2 text-sm"
+                style="color: rgba(255, 255, 255, 0.6)"
               >
-                <span>🐦</span>
-              </a>
-              <a
-                href="#"
-                class="w-10 h-10 rounded-full flex items-center justify-center transition-all hover:scale-110"
-                style="background: rgba(255, 255, 255, 0.1)"
+                <p>
+                  45 Avenue des Champs-Élysées<br />
+                  75008 Paris, France
+                </p>
+                <p> +33 1 42 56 38 90</p>
+                <p> contact@veloparis.fr</p>
+              </div>
+            </div>
+            <!-- Horarios -->
+            <div>
+              <h4 class="font-semibold mb-4 text-sm" style="color: #d4af37">
+                HORARIOS
+              </h4>
+              <div
+                class="space-y-2 text-sm"
+                style="color: rgba(255, 255, 255, 0.6)"
               >
-                <span>����</span>
-              </a>
+                <p>Lun-Vie: 8:00-20:00</p>
+                <p>Sábados: 9:00-22:00</p>
+                <p>Domingos: 10:00-19:00</p>
+                <p class="mt-3 font-semibold" style="color: #d4af37">
+                Servicio 24/7 por app
+                </p>
+              </div>
+            </div>
+            <!-- Enlaces -->
+            <div>
+              <h4 class="font-semibold mb-4 text-sm" style="color: #d4af37">
+                 ENLACES
+              </h4>
+              <div class="space-y-2 text-sm">
+                <a
+                  href="#quienes-somos"
+                  class="block hover:opacity-70 transition-opacity"
+                  style="color: rgba(255, 255, 255, 0.6)"
+                  >Quiénes Somos</a
+                >
+                <a
+                  href="#routes"
+                  class="block hover:opacity-70 transition-opacity"
+                  style="color: rgba(255, 255, 255, 0.6)"
+                  >Rutas</a
+                >
+                <a
+                  href="#pricing"
+                  class="block hover:opacity-70 transition-opacity"
+                  style="color: rgba(255, 255, 255, 0.6)"
+                  >Precios</a
+                >
+              </div>
             </div>
           </div>
           <div
@@ -1562,7 +1941,7 @@
             style="border-top: 1px solid rgba(255, 255, 255, 0.1)"
           >
             <p class="text-sm" style="color: rgba(255, 255, 255, 0.4)">
-              © 2024 VéloParis. Hecho con 💛 en París. Demo/Simulación.
+              © 2018 VéloParis. Hecho con 💛 en París
             </p>
           </div>
         </div>
@@ -1576,7 +1955,7 @@
         class="w-16 h-16 rounded-full shadow-2xl flex items-center justify-center transition-all hover:scale-110 pulse-glow"
         style="background: #d4af37"
       >
-        <span class="text-3xl" id="chat-icon">💬</span>
+        <span class="text-3xl" id="chat-icon"></span>
       </button>
       <!-- Chat Window -->
       <div
@@ -1850,6 +2229,27 @@
         ]);
       }
 
+      // Mobile Menu Toggle
+      const mobileMenuBtn = document.getElementById("mobile-menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+      const menuIcon = document.getElementById("menu-icon");
+      let isMobileMenuOpen = false;
+
+      if (mobileMenuBtn) {
+        mobileMenuBtn.addEventListener("click", () => {
+          isMobileMenuOpen = !isMobileMenuOpen;
+          if (isMobileMenuOpen) {
+            mobileMenu.style.maxHeight = "400px";
+            menuIcon.innerHTML =
+              '<line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line>';
+          } else {
+            mobileMenu.style.maxHeight = "0";
+            menuIcon.innerHTML =
+              '<line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line>';
+          }
+        });
+      }
+
       // Smooth scroll for navigation
       document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
         anchor.addEventListener("click", function (e) {
@@ -1857,6 +2257,14 @@
           const target = document.querySelector(this.getAttribute("href"));
           if (target) {
             target.scrollIntoView({ behavior: "smooth", block: "start" });
+
+            // Close mobile menu after clicking a link
+            if (isMobileMenuOpen && mobileMenu) {
+              isMobileMenuOpen = false;
+              mobileMenu.style.maxHeight = "0";
+              menuIcon.innerHTML =
+                '<line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line>';
+            }
           }
         });
       });
@@ -1890,7 +2298,7 @@
           delay: 1000,
         },
         "¿Cuáles son los precios?": {
-          text: "Nuestras tarifas son:\n\n🚲 Vélo Classic: €2.50/1h + €1.00 cada hora extra\n🏃 Vélo Sport: €3.50/1h + €1.50 cada hora extra\n👨‍👩‍👧 Vélo Famille: €4.00/1h + €2.00 cada hora extra\n👫 Vélo Duo: €5.00/1h + €2.50 cada hora extra\n\n¡También tenemos pases día y semana con descuento!",
+          text: "Nuestras tarifas son:\n\n🚲 Vélo Classic: €2.50/1h + €1.00 cada hora extra\n🏃 Vélo Sport: €3.50/1h + €1.50 cada hora extra\n👩‍👧 Vélo Famille: €4.00/1h + €2.00 cada hora extra\n👫 Vélo Duo: €5.00/1h + €2.50 cada hora extra\n\n¡También tenemos pases día y semana con descuento!",
           delay: 1200,
         },
         "¿Dónde están ubicados?": {
@@ -1898,7 +2306,7 @@
           delay: 1300,
         },
         "Necesito ayuda técnica": {
-          text: "🛠️ Estoy aquí para ayudarte.\n\n¿Tienes problemas con:\n• La app no abre\n• No puedo desbloquear la bici\n• Problema con el pago\n• La bici tiene un defecto\n• Otro problema\n\nPor favor describe tu situación y te ayudaré de inmediato. Para emergencias llama al +33 1 42 56 38 90",
+          text: "🛠️ Estoy aquí para ayudarte.\n\n¿Tienes problemas con:\n La app no abre\n• No puedo desbloquear la bici\n• Problema con el pago\n• La bici tiene un defecto\n• Otro problema\n\nPor favor describe tu situación y te ayudar�� de inmediato. Para emergencias llama al +33 1 42 56 38 90",
           delay: 1100,
         },
         default: {
@@ -2044,7 +2452,7 @@
           if (b) {
             var d = b.createElement("script");
             d.innerHTML =
-              "window.__CF$cv$params={r:'9c803236b1bcdc94',t:'MTc3MDEwMzU0NS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";
+              "window.__CF$cv$params={r:'9c84411f534a1f76',t:'MTc3MDE0NjA5OS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";
             b.getElementsByTagName("head")[0].appendChild(d);
           }
         }
